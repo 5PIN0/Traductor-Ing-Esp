@@ -11,6 +11,5 @@ if __name__ == '__main__':
     threading.Thread(target=load_model_in_background, daemon=True).start()
     app = QApplication([])
     window = TranslatorApp()
-    window.create_ui()
     window.show()
     app.exec_()
